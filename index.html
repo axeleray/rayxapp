@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="description"
+        content="RayXapp is a premium software download platform for Android apps and Windows software."
+    >
+
+    <meta
+        name="keywords"
+        content="RayXapp, Android APK, Windows software, download apps, PC software"
+    >
+
+    <meta name="theme-color" content="#080b12">
+
+    <title>RayXapp — Android & Windows Software Downloads</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Prevent theme flash -->
+    <script>
+        (function () {
+            try {
+                const savedTheme = localStorage.getItem("rayxapp-theme");
+
+                if (savedTheme === "light") {
+                    document.documentElement.classList.add("light-theme");
+                }
+            } catch (error) {
+                console.warn("Theme initialization failed:", error);
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- =========================================
+         PAGE LOADER
+    ========================================== -->
+
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+
+            <div class="loader-logo">
+                RX
+            </div>
+
+            <div class="loader-spinner"></div>
+
+            <p>Loading RayXapp...</p>
+
+        </div>
+    </div>
+
+
+    <!-- =========================================
+         HEADER
+    ========================================== -->
+
+    <header class="site-header" id="siteHeader">
+
+        <div class="container header-inner">
+
+            <!-- Logo -->
+
+            <a href="index.html" class="brand" aria-label="RayXapp Home">
+
+                <span class="brand-mark">
+                    RX
+                </span>
+
+                <span class="brand-text">
+                    Ray<span>X</span>app
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav class="desktop-nav" aria-label="Main navigation">
+
+                <a href="#home" class="nav-link active">
+                    Home
+                </a>
+
+                <a href="#android" class="nav-link">
+                    Android
+                </a>
+
+                <a href="#windows" class="nav-link">
+                    Windows
+                </a>
+
+                <a href="#categories" class="nav-link">
+                    Categories
+                </a>
+
+                <a href="#about" class="nav-link">
+                    About
+                </a>
+
+            </nav>
+
+
+            <!-- Header Actions -->
+
+            <div class="header-actions">
+
+                <button
+                    class="theme-toggle"
+                    id="themeToggle"
+                    type="button"
+                    aria-label="Toggle theme"
+                    title="Toggle theme"
+                >
+                    <span class="theme-icon">☾</span>
+                </button>
+
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Open menu"
+                    aria-expanded="false"
+                >
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Navigation -->
+
+        <div class="mobile-nav" id="mobileNav">
+
+            <nav aria-label="Mobile navigation">
+
+                <a href="#home" class="mobile-nav-link active">
+                    Home
+                </a>
+
+                <a href="#android" class="mobile-nav-link">
+                    Android
+                </a>
+
+                <a href="#windows" class="mobile-nav-link">
+                    Windows
+                </a>
+
+                <a href="#categories" class="mobile-nav-link">
+                    Categories
+                </a>
+
+                <a href="#about" class="mobile-nav-link">
+                    About
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+        <!-- =========================================
+             HERO
+        ========================================== -->
+
+        <section class="hero-section" id="home">
+
+            <div class="hero-background">
+
+                <div class="hero-glow hero-glow-one"></div>
+                <div class="hero-glow hero-glow-two"></div>
+                <div class="hero-grid"></div>
+
+            </div>
+
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="hero-badge">
+
+                        <span class="status-dot"></span>
+
+                        Premium Software Download Platform
+
+                    </div>
+
+
+                    <h1>
+
+                        Discover.
+                        <span>Download.</span>
+                        Install.
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Find trusted Android applications and Windows
+                        software in one clean, fast and easy-to-use
+                        download platform.
+
+                    </p>
+
+
+                    <div class="hero-actions">
+
+                        <a
+                            href="#android"
+                            class="btn btn-primary"
+                        >
+                            <span>Explore Android</span>
+                            <span class="btn-arrow">→</span>
+                        </a>
+
+
+                        <a
+                            href="#windows"
+                            class="btn btn-secondary"
+                        >
+                            <span>Explore Windows</span>
+                        </a>
+
+                    </div>
+
+
+                    <!-- Hero Stats -->
+
+                    <div class="hero-stats">
+
+                        <div class="hero-stat">
+
+                            <strong>100%</strong>
+
+                            <span>Free Downloads</span>
+
+                        </div>
+
+
+                        <div class="hero-stat-divider"></div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>Android</strong>
+
+                            <span>APK Apps</span>
+
+                        </div>
+
+
+                        <div class="hero-stat-divider"></div>
+
+
+                        <div class="hero-stat">
+
+                            <strong>Windows</strong>
+
+                            <span>PC Software</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Hero Visual -->
+
+                <div class="hero-visual">
+
+                    <div class="hero-device-glow"></div>
+
+
+                    <div class="software-window">
+
+                        <div class="software-window-header">
+
+                            <div class="window-controls">
+
+                                <span></span>
+                                <span></span>
+                                <span></span>
+
+                            </div>
+
+
+                            <div class="window-title">
+                                RayXapp
+                            </div>
+
+                        </div>
+
+
+                        <div class="software-window-body">
+
+                            <div class="window-sidebar">
+
+                                <div class="sidebar-logo">
+                                    RX
+                                </div>
+
+                                <div class="sidebar-item active">
+                                    ◉
+                                </div>
+
+                                <div class="sidebar-item">
+                                    ◇
+                                </div>
+
+                                <div class="sidebar-item">
+                                    □
+                                </div>
+
+                                <div class="sidebar-item">
+                                    ⚙
+                                </div>
+
+                            </div>
+
+
+                            <div class="window-main">
+
+                                <div class="window-search">
+
+                                    <span>⌕</span>
+
+                                    <span>
+                                        Search apps & software...
+                                    </span>
+
+                                </div>
+
+
+                                <div class="window-heading">
+
+                                    <div>
+
+                                        <small>
+                                            DISCOVER
+                                        </small>
+
+                                        <h3>
+                                            Popular Downloads
+                                        </h3>
+
+                                    </div>
+
+                                    <span class="window-more">
+                                        View all →
+                                    </span>
+
+                                </div>
+
+
+                                <div class="window-app-list">
+
+                                    <div class="window-app">
+
+                                        <div class="window-app-icon android-icon">
+                                            A
+                                        </div>
+
+                                        <div class="window-app-info">
+
+                                            <strong>
+                                                Android Apps
+                                            </strong>
+
+                                            <span>
+                                                APK Downloads
+                                            </span>
+
+                                        </div>
+
+                                        <span class="window-download">
+                                            ↓
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="window-app">
+
+                                        <div class="window-app-icon windows-icon">
+                                            W
+                                        </div>
+
+                                        <div class="window-app-info">
+
+                                            <strong>
+                                                Windows Software
+                                            </strong>
+
+                                            <span>
+                                                PC Downloads
+                                            </span>
+
+                                        </div>
+
+                                        <span class="window-download">
+                                            ↓
+                                        </span>
+
+                                    </div>
+
+
+                                    <div class="window-app">
+
+                                        <div class="window-app-icon tools-icon">
+                                            T
+                                        </div>
+
+                                        <div class="window-app-info">
+
+                                            <strong>
+                                                Useful Tools
+                                            </strong>
+
+                                            <span>
+                                                Utilities & Tools
+                                            </span>
+
+                                        </div>
+
+                                        <span class="window-download">
+                                            ↓
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Floating Cards -->
+
+                    <div class="floating-card floating-card-one">
+
+                        <div class="floating-icon">
+                            ✓
+                        </div>
+
+                        <div>
+                            <strong>Trusted Files</strong>
+                            <span>Verified downloads</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card floating-card-two">
+
+                        <div class="floating-icon">
+                            ↓
+                        </div>
+
+                        <div>
+                            <strong>Fast Download</strong>
+                            <span>Simple & direct</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             SEARCH
+        ========================================== -->
+
+        <section class="search-section">
+
+            <div class="container">
+
+                <div class="search-box">
+
+                    <div class="search-icon">
+                        ⌕
+                    </div>
+
+                    <input
+                        type="search"
+                        id="appSearch"
+                        placeholder="Search apps, games, tools or Windows software..."
+                        autocomplete="off"
+                        aria-label="Search RayXapp"
+                    >
+
+                    <button
+                        type="button"
+                        id="clearSearch"
+                        class="search-clear"
+                        aria-label="Clear search"
+                    >
+                        ×
+                    </button>
+
+                </div>
+
+
+                <div class="search-hint">
+
+                    <span>Popular:</span>
+
+                    <a href="#android">Android Apps</a>
+                    <a href="#windows">Windows</a>
+                    <a href="#categories">Utilities</a>
+                    <a href="#categories">Multimedia</a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             PLATFORM SELECTION
+        ========================================== -->
+
+        <section class="platform-section">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span class="section-label">
+                        DOWNLOAD PLATFORM
+                    </span>
+
+                    <h2>
+                        Everything you need,
+                        <span>in one place.</span>
+                    </h2>
+
+                    <p>
+                        Browse applications and software based on
+                        the device you use.
+                    </p>
+
+                </div>
+
+
+                <div class="platform-grid">
+
+                    <!-- Android -->
+
+                    <a
+                        href="#android"
+                        class="platform-card platform-android"
+                    >
+
+                        <div class="platform-card-top">
+
+                            <div class="platform-icon">
+                                A
+                            </div>
+
+                            <span class="platform-arrow">
+                                →
+                            </span>
+
+                        </div>
+
+
+                        <div class="platform-card-content">
+
+                            <span class="platform-tag">
+                                MOBILE
+                            </span>
+
+                            <h3>
+                                Android
+                            </h3>
+
+                            <p>
+                                Download Android apps and APK files
+                                for your mobile device.
+                            </p>
+
+                        </div>
+
+
+                        <div class="platform-card-footer">
+
+                            <span>
+                                Explore Android Apps
+                            </span>
+
+                            <span>
+                                →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- Windows -->
+
+                    <a
+                        href="#windows"
+                        class="platform-card platform-windows"
+                    >
+
+                        <div class="platform-card-top">
+
+                            <div class="platform-icon">
+                                W
+                            </div>
+
+                            <span class="platform-arrow">
+                                →
+                            </span>
+
+                        </div>
+
+
+                        <div class="platform-card-content">
+
+                            <span class="platform-tag">
+                                DESKTOP
+                            </span>
+
+                            <h3>
+                                Windows
+                            </h3>
+
+                            <p>
+                                Download useful Windows software,
+                                tools and desktop applications.
+                            </p>
+
+                        </div>
+
+
+                        <div class="platform-card-footer">
+
+                            <span>
+                                Explore Windows Software
+                            </span>
+
+                            <span>
+                                →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             ANDROID
+        ========================================== -->
+
+        <section
+            class="apps-section"
+            id="android"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                            ANDROID
+                        </span>
+
+                        <h2>
+                            Android Apps
+                        </h2>
+
+                        <p>
+                            Discover useful Android applications
+                            available for download.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="android.html"
+                        class="view-all-link"
+                    >
+                        View all Android apps →
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="apps-grid"
+                    id="androidAppsGrid"
+                >
+
+                    <!-- Android App -->
+
+                    <article
+                        class="app-card"
+                        data-name="Android App Example"
+                        data-platform="android"
+                    >
+
+                        <div class="app-card-icon">
+                            A
+                        </div>
+
+
+                        <div class="app-card-content">
+
+                            <div class="app-card-meta">
+
+                                <span class="app-platform-badge android-badge">
+                                    Android
+                                </span>
+
+                                <span class="app-version">
+                                    APK
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Your Android App
+                            </h3>
+
+
+                            <p>
+                                Add your Android application
+                                information here.
+                            </p>
+
+
+                            <div class="app-card-info">
+
+                                <span>
+                                    Version 1.0
+                                </span>
+
+                                <span>
+                                    •
+                                </span>
+
+                                <span>
+                                    Free
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="app.html"
+                            class="app-download-btn"
+                            aria-label="View Android app"
+                        >
+                            →
+                        </a>
+
+                    </article>
+
+
+                    <!-- Empty / Future -->
+
+                    <article
+                        class="app-card app-card-placeholder"
+                    >
+
+                        <div class="placeholder-icon">
+                            +
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                More Apps Coming Soon
+                            </h3>
+
+                            <p>
+                                New Android applications will
+                                be added here.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div
+                    class="empty-search"
+                    id="emptySearch"
+                    hidden
+                >
+
+                    <div class="empty-search-icon">
+                        ⌕
+                    </div>
+
+                    <h3>
+                        No results found
+                    </h3>
+
+                    <p>
+                        Try searching for another application.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             WINDOWS
+        ========================================== -->
+
+        <section
+            class="apps-section windows-section"
+            id="windows"
+        >
+
+            <div class="container">
+
+                <div class="section-heading-row">
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                            WINDOWS
+                        </span>
+
+                        <h2>
+                            Windows Software
+                        </h2>
+
+                        <p>
+                            Find useful desktop software and
+                            Windows utilities.
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        href="windows.html"
+                        class="view-all-link"
+                    >
+                        View all Windows software →
+                    </a>
+
+                </div>
+
+
+                <div
+                    class="apps-grid"
+                    id="windowsAppsGrid"
+                >
+
+                    <!-- Windows Software -->
+
+                    <article
+                        class="app-card"
+                        data-name="Windows Software Example"
+                        data-platform="windows"
+                    >
+
+                        <div class="app-card-icon windows-card-icon">
+                            W
+                        </div>
+
+
+                        <div class="app-card-content">
+
+                            <div class="app-card-meta">
+
+                                <span class="app-platform-badge windows-badge">
+                                    Windows
+                                </span>
+
+                                <span class="app-version">
+                                    EXE
+                                </span>
+
+                            </div>
+
+
+                            <h3>
+                                Your Windows Software
+                            </h3>
+
+
+                            <p>
+                                Add your Windows software
+                                information here.
+                            </p>
+
+
+                            <div class="app-card-info">
+
+                                <span>
+                                    Version 1.0
+                                </span>
+
+                                <span>
+                                    •
+                                </span>
+
+                                <span>
+                                    Free
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <a
+                            href="software.html"
+                            class="app-download-btn"
+                            aria-label="View Windows software"
+                        >
+                            →
+                        </a>
+
+                    </article>
+
+
+                    <!-- Empty / Future -->
+
+                    <article
+                        class="app-card app-card-placeholder"
+                    >
+
+                        <div class="placeholder-icon">
+                            +
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                More Software Coming Soon
+                            </h3>
+
+                            <p>
+                                New Windows software will
+                                be added here.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CATEGORIES
+        ========================================== -->
+
+        <section
+            class="categories-section"
+            id="categories"
+        >
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span class="section-label">
+                        CATEGORIES
+                    </span>
+
+                    <h2>
+                        Browse by category
+                    </h2>
+
+                    <p>
+                        Quickly find the type of software
+                        you're looking for.
+                    </p>
+
+                </div>
+
+
+                <div class="categories-grid">
+
+                    <a
+                        href="android.html?category=productivity"
+                        class="category-card"
+                    >
+
+                        <span class="category-icon">
+                            ✓
+                        </span>
+
+                        <span class="category-name">
+                            Productivity
+                        </span>
+
+                        <span class="category-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="android.html?category=multimedia"
+                        class="category-card"
+                    >
+
+                        <span class="category-icon">
+                            ▶
+                        </span>
+
+                        <span class="category-name">
+                            Multimedia
+                        </span>
+
+                        <span class="category-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="android.html?category=tools"
+                        class="category-card"
+                    >
+
+                        <span class="category-icon">
+                            ⚙
+                        </span>
+
+                        <span class="category-name">
+                            Tools
+                        </span>
+
+                        <span class="category-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="android.html?category=utility"
+                        class="category-card"
+                    >
+
+                        <span class="category-icon">
+                            ◇
+                        </span>
+
+                        <span class="category-name">
+                            Utilities
+                        </span>
+
+                        <span class="category-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="android.html?category=security"
+                        class="category-card"
+                    >
+
+                        <span class="category-icon">
+                            ✓
+                        </span>
+
+                        <span class="category-name">
+                            Security
+                        </span>
+
+                        <span class="category-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                    <a
+                        href="android.html?category=education"
+                        class="category-card"
+                    >
+
+                        <span class="category-icon">
+                            A
+                        </span>
+
+                        <span class="category-name">
+                            Education
+                        </span>
+
+                        <span class="category-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             WHY RAYXAPP
+        ========================================== -->
+
+        <section class="benefits-section">
+
+            <div class="container">
+
+                <div class="benefits-layout">
+
+                    <div class="section-heading">
+
+                        <span class="section-label">
+                            WHY RAYXAPP
+                        </span>
+
+                        <h2>
+                            Simple downloads.
+                            <span>Better experience.</span>
+                        </h2>
+
+                        <p>
+                            RayXapp is designed to make discovering
+                            and downloading software straightforward,
+                            fast and convenient.
+                        </p>
+
+                    </div>
+
+
+                    <div class="benefits-grid">
+
+                        <div class="benefit-card">
+
+                            <div class="benefit-number">
+                                01
+                            </div>
+
+                            <div class="benefit-icon">
+                                ↓
+                            </div>
+
+                            <h3>
+                                Direct Downloads
+                            </h3>
+
+                            <p>
+                                Get to your download without
+                                unnecessary complicated steps.
+                            </p>
+
+                        </div>
+
+
+                        <div class="benefit-card">
+
+                            <div class="benefit-number">
+                                02
+                            </div>
+
+                            <div class="benefit-icon">
+                                ✓
+                            </div>
+
+                            <h3>
+                                Clear Information
+                            </h3>
+
+                            <p>
+                                Version, platform, file type and
+                                other useful details are displayed.
+                            </p>
+
+                        </div>
+
+
+                        <div class="benefit-card">
+
+                            <div class="benefit-number">
+                                03
+                            </div>
+
+                            <div class="benefit-icon">
+                                ⚡
+                            </div>
+
+                            <h3>
+                                Fast & Simple
+                            </h3>
+
+                            <p>
+                                A lightweight interface designed
+                                for quick browsing on mobile and PC.
+                            </p>
+
+                        </div>
+
+
+                        <div class="benefit-card">
+
+                            <div class="benefit-number">
+                                04
+                            </div>
+
+                            <div class="benefit-icon">
+                                ◇
+                            </div>
+
+                            <h3>
+                                Organized Library
+                            </h3>
+
+                            <p>
+                                Browse Android and Windows software
+                                through organized categories.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             ABOUT
+        ========================================== -->
+
+        <section
+            class="about-section"
+            id="about"
+        >
+
+            <div class="container">
+
+                <div class="about-card">
+
+                    <div class="about-content">
+
+                        <span class="section-label">
+                            ABOUT RAYXAPP
+                        </span>
+
+                        <h2>
+                            Your software,
+                            <span>your choice.</span>
+                        </h2>
+
+                        <p>
+                            RayXapp is a software download platform
+                            created to provide a clean and convenient
+                            way to discover Android applications and
+                            Windows software.
+                        </p>
+
+                        <p>
+                            Our goal is to make software discovery
+                            easier by presenting useful information
+                            in a simple and modern interface.
+                        </p>
+
+
+                        <a
+                            href="about.html"
+                            class="btn btn-secondary"
+                        >
+                            Learn More
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="about-visual">
+
+                        <div class="about-orbit orbit-one"></div>
+                        <div class="about-orbit orbit-two"></div>
+
+                        <div class="about-logo">
+                            RX
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             CTA
+        ========================================== -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-card">
+
+                    <div class="cta-glow"></div>
+
+                    <div class="cta-content">
+
+                        <span class="section-label">
+                            START EXPLORING
+                        </span>
+
+                        <h2>
+                            Find your next
+                            <span>favorite software.</span>
+                        </h2>
+
+                        <p>
+                            Browse Android apps and Windows software
+                            available on RayXapp.
+                        </p>
+
+
+                        <div class="cta-actions">
+
+                            <a
+                                href="#android"
+                                class="btn btn-primary"
+                            >
+                                Explore Android
+                                <span>→</span>
+                            </a>
+
+                            <a
+                                href="#windows"
+                                class="btn btn-secondary"
+                            >
+                                Explore Windows
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <!-- Brand -->
+
+                <div class="footer-brand">
+
+                    <a
+                        href="index.html"
+                        class="brand"
+                    >
+
+                        <span class="brand-mark">
+                            RX
+                        </span>
+
+                        <span class="brand-text">
+                            Ray<span>X</span>app
+                        </span>
+
+                    </a>
+
+
+                    <p>
+                        A modern download platform for
+                        Android apps and Windows software.
+                    </p>
+
+                </div>
+
+
+                <!-- Platform -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Platform
+                    </h3>
+
+                    <a href="#android">
+                        Android
+                    </a>
+
+                    <a href="#windows">
+                        Windows
+                    </a>
+
+                    <a href="#categories">
+                        Categories
+                    </a>
+
+                </div>
+
+
+                <!-- Resources -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Resources
+                    </h3>
+
+                    <a href="android.html">
+                        Android Apps
+                    </a>
+
+                    <a href="windows.html">
+                        Windows Software
+                    </a>
+
+                    <a href="about.html">
+                        About RayXapp
+                    </a>
+
+                </div>
+
+
+                <!-- Information -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Information
+                    </h3>
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <a href="#">
+                        Terms of Use
+                    </a>
+
+                    <a href="#">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    RayXapp. All rights reserved.
+                </p>
+
+
+                <p>
+                    Android & Windows Software Downloads
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =========================================
+         BACK TO TOP
+    ========================================== -->
+
+    <button
+        type="button"
+        class="back-to-top"
+        id="backToTop"
+        aria-label="Back to top"
+        title="Back to top"
+    >
+        ↑
+    </button>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="js/app.js"></script>
+
+
+    <!-- Basic fallback functionality -->
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+
+            /* Current Year */
+
+            const yearElement =
+                document.getElementById("currentYear");
+
+            if (yearElement) {
+                yearElement.textContent =
+                    new Date().getFullYear();
+            }
+
+
+            /* Page Loader */
+
+            const loader =
+                document.getElementById("pageLoader");
+
+            if (loader) {
+
+                window.addEventListener("load", function () {
+
+                    setTimeout(function () {
+
+                        loader.classList.add("loaded");
+
+                    }, 400);
+
+                });
+
+            }
+
+
+            /* Back To Top */
+
+            const backToTop =
+                document.getElementById("backToTop");
+
+            if (backToTop) {
+
+                window.addEventListener("scroll", function () {
+
+                    if (window.scrollY > 500) {
+
+                        backToTop.classList.add("show");
+
+                    } else {
+
+                        backToTop.classList.remove("show");
+
+                    }
+
+                });
+
+
+                backToTop.addEventListener(
+                    "click",
+                    function () {
+
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "smooth"
+                        });
+
+                    }
+                );
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>
